@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Api CallVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController restorationIdentifier="ApiCallVC" storyboardIdentifier="ApiCallVC" id="Y6W-OH-hqX" customClass="ApiCallVC" customModule="SwiftMasterProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqH-DT-npO">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkS-ak-Hgw">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZ9-wp-8bl">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mx-t0-MtP">
+                                                        <rect key="frame" x="144" y="355.66666666666669" width="105" height="48"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Api Call">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="btnApiCall:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="so6-hP-UPp"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="2Mx-t0-MtP" firstAttribute="centerY" secondItem="GZ9-wp-8bl" secondAttribute="centerY" id="5ad-vk-cbM"/>
+                                                    <constraint firstItem="2Mx-t0-MtP" firstAttribute="centerX" secondItem="GZ9-wp-8bl" secondAttribute="centerX" id="y0Y-KC-1We"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="GZ9-wp-8bl" firstAttribute="leading" secondItem="mkS-ak-Hgw" secondAttribute="leading" id="DSG-oX-lrB"/>
+                                            <constraint firstAttribute="bottom" secondItem="GZ9-wp-8bl" secondAttribute="bottom" id="Kmp-Vu-3Hg"/>
+                                            <constraint firstAttribute="trailing" secondItem="GZ9-wp-8bl" secondAttribute="trailing" id="ach-WJ-BJe"/>
+                                            <constraint firstItem="GZ9-wp-8bl" firstAttribute="top" secondItem="mkS-ak-Hgw" secondAttribute="top" id="hkF-c6-lqJ"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="mkS-ak-Hgw" firstAttribute="leading" secondItem="vqH-DT-npO" secondAttribute="leading" id="YQi-lt-8Ow"/>
+                                    <constraint firstAttribute="trailing" secondItem="mkS-ak-Hgw" secondAttribute="trailing" id="eyP-eC-Aj9"/>
+                                    <constraint firstItem="GZ9-wp-8bl" firstAttribute="height" secondItem="vqH-DT-npO" secondAttribute="height" priority="250" id="hep-Wk-YSE"/>
+                                    <constraint firstItem="mkS-ak-Hgw" firstAttribute="top" secondItem="vqH-DT-npO" secondAttribute="top" id="nSE-db-Hbv"/>
+                                    <constraint firstAttribute="bottom" secondItem="mkS-ak-Hgw" secondAttribute="bottom" id="pLi-L6-Pd7"/>
+                                    <constraint firstItem="GZ9-wp-8bl" firstAttribute="width" secondItem="vqH-DT-npO" secondAttribute="width" id="sbj-1e-bim"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="vqH-DT-npO" secondAttribute="bottom" id="cs8-bS-GET"/>
+                            <constraint firstItem="vqH-DT-npO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fYN-28-es3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vqH-DT-npO" secondAttribute="trailing" id="lS5-KL-jq1"/>
+                            <constraint firstItem="vqH-DT-npO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="qGw-Cv-8Xk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

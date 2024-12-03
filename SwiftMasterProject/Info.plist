@@ -2,12 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This app requires location </string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app requires access to the photo library</string>
-	<key>NSCameraUsageDescription</key>
-	<string>This app requires access to the camera</string>
+	<key>FacebookAppID</key>
+	<string>364148472419246</string>
+	<key>FacebookClientToken</key>
+	<string>d28359fef199b121d872b31a790846f4</string>
+	<key>GIDClientID</key>
+	<string>86420572708-ho73kia9jokb0g3e96r5nk9d9q7t842c.apps.googleusercontent.com</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -27,5 +27,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 </dict>
 </plist>

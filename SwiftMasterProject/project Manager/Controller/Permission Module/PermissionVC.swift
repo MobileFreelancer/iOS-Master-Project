@@ -10,25 +10,26 @@ import CoreLocation
 
 class PermissionVC: UIViewController {
     
+    //MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.setUpUI()
     }
     
+    //MARK: - SetUpUI
+
     //MARK: - IB_Actions
     @IBAction func btnCameraClick(_ sender: Any) {
         Permissions().showAlert(aViewcontoller: self, title: "complete action using")
     }
     
-
     @IBAction func btnLocationClick(_ sender: Any) {
-       
         Permissions().checkLocationPermission(aViewcontoller: self)
     }
     
      @IBAction func btnFileManagerClick(_ sender: Any) {
          Permissions().openDocumentPicker(aViewcontoller: self)
-         
-    }
+     }
 }
 
 //MARK: - ImagePicker Delegate
@@ -56,10 +57,9 @@ extension PermissionVC: UIDocumentPickerDelegate {
         guard let selectedURL = urls.first else {
             return
         }
-
         print("Selected document URL: \(selectedURL)")
     }
-
+    
     func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
         print("Document picker was cancelled")
     }
